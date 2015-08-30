@@ -4,8 +4,8 @@ MAINTAINER Dmitry Prazdnichnov <dp@bambucha.org>
 RUN apk --update add lighttpd php-cgi php-gd \
     && rm -rf /var/cache/apk/*
 
-ENV VERSION     2015-08-10a
-ENV CHECKSUM    a4b8ae00ce94e42d4ef52dd8f4ad30fe
+ENV VERSION     2015-08-10
+ENV CHECKSUM    675594518c378f43b32204c4b9073ffd
 
 RUN wget -O dokuwiki.tgz http://download.dokuwiki.org/src/dokuwiki/dokuwiki-$VERSION.tgz \
     && echo "$CHECKSUM  dokuwiki.tgz" | md5sum -c - \
